@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/step_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/week_step_count"
+            android:layout_below="@+id/step_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/expanded_calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/week_step_count" />
+
+
+        <TextView
+            android:id="@+id/week_calories"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/expanded_calories"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/user_bmr"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/week_calories"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/health"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/user_bmr"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/breakfast"
+            android:text="Breakfast"
+            android:layout_below="@+id/health"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/result_breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/breakfast"/>
+
+        <TextView
+            android:id="@+id/lunch"
+            android:text="Lunch"
+            android:layout_below="@+id/result_breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/result_lunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lunch"/>
+
+        <TextView
+            android:id="@+id/dinner"
+            android:text="Dinner"
+            android:layout_below="@+id/result_lunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/result_dinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dinner"/>
+
+        <Button
+            android:id="@+id/add_new_diary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/result_dinner"
+            android:text="Add New Diary" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
